@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片瀑布流</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div class="wrap js_wrap"></div>
+
+	<script type="text/javascript" src="js/utils.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+		new Waterfall('js_wrap', {
+			imgApi: 'server/index.php',
+			column: 5,
+			gap: 15
+		}).init();
+	</script>
+</body>
+</html>
